@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+  background-color: rgba(0, 0, 0, 0); /* indul teljesen átlátszóként */
+  transition: background-color 0.1s linear;
+    padding: 15px;
+    z-index: 10000;
+}
+header div img{
+    display: flex;
+    height: 60px;
+    width: 60px;
+}
+header div{
+    display: flex;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+
+header .menu{
+    display: flex;
+    height: 60px;
+    padding-right: 35px;
+    align-items: center;
+}
+
+header .menu nav button{
+    color: gray;
+    padding: 15px 15px;
+    border-radius: 35px;
+    font-size: 100%;
+    background: transparent;
+    height: 100%;
+    width: auto;
+}
+
+header .menu nav button:hover{
+    transition: 1s ease-out;
+    color: white;
+    cursor: pointer;
+}
+
+header .menu nav button.active{
+    color: white;
+}
+header .menu .zaszlo{
+    position: relative;
+    height: 70%;
+    width: auto;
+    border-radius: 25px;
+}
+header .menu .zaszlo img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+.page.active .tartalom{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#föoldal .fökép{
+    display: flex;
+    height: 700px;
+    width: 100%;
+}
+#föoldal .oldalcim{
+    position: absolute;
+    top: 600px;
+    justify-content: center;
+    font-size: 35px;
+    display: flex;
+    width: 100%;
+    color: white;
+}
+#föoldal .tartalom h1{
+    position: relative;
+    margin-bottom: 25px;
+    color: grey;
+}
+#föoldal .tartalom .teteje img{
+    position: relative;
+    height: 320px;
+    width: 320px;
+    border-radius: 5px;
+}
+#föoldal .tartalom div{
+    display: flex;
+    position: relative;
+}
+#föoldal .tartalom h1 pre{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+#föoldal .tartalom div div{
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#föoldal .tartalom div div h1{
+    color: black;
+    font-size: 45px;
+}
+#föoldal .tartalom .Menü{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#föoldal .tartalom .Menü div{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+#föoldal .tartalom .Menü div button{
+    position: relative;
+    height: 50px;
+    width: 300px;
+    color: white;
+    background-color: gray;
+    font-size: 30px;
+    z-index: 5;
+}
+#föoldal .tartalom .nyilak{
+    position: relative;
+    display: flex;
+    gap: 55px;
+}
+
+#föoldal .tartalom .nyilak .NYIL{
+    position: relative;
+    height: 55px;
+    width: 55px;
+    background-color: black;
+    rotate: 45deg;
+    border-radius: 0 50px 5px 50px;
+}
+#föoldal .tartalom .nyilak .NYIL::after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: -1px;
+    left: -1px;
+    background: white;
+    border-radius: 0 0 15px 0;
+
+}
+#föoldal .tartalom .haterek{
+    padding-top: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+}
+#föoldal .tartalom .haterek div{
+    position: relative;
+    display: grid;
+    grid-template-columns: 34.5% 65.5%;
+}
+#föoldal .tartalom .haterek div div{
+    display: flex;
+}
+#föoldal .tartalom .haterek div div div{
+    height: auto;
+    width: 100%;
+}
+#föoldal .tartalom .haterek div div div img{
+    position: relative;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 5px 0px black,
+    10px 10px 10px black;
+}
+
+.oldalcim{
+    position: absolute;
+    top: 110px;
+    justify-content: center;
+    font-size: 50px;
+    display: flex;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+
+#setup, #menetrend, #kapcsolatok, img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+}
+
+#setup pre{
+    position: relative;
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#kapcsolatok .tartalom h1{
+    position: relative;
+    margin-bottom: 25px;
+    color: grey;
+}
+#kapcsolatok .tartalom{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#kapcsolatok .tartalom div{
+    position: relative;
+    gap: 25px;
+    align-items: center;
+    justify-self: center;
+}
+#kapcsolatok .tartalom div div{
+    position: relative;
+    display: flex;
+}
+
+#kapcsolatok div div div div img{
+    position: relative;
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#kapcsolatok div div div div .discord{
+    position: relative;
+    height: 240px;
+    width: 400px;
+    border-radius: 10px;
+}
+#kapcsolatok div div div div .insta{
+    position: relative;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+}
+#kapcsolatok .tartalom div div .uzen{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    gap: 0;
+}
+#kapcsolatok .tartalom div div .uzen h1{
+    margin: 0;
+    padding: 0;
+}
+#kapcsolatok .tartalom div div .uzen a{
+    position: relative;
+    display: flex;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    background: grey;
+    padding: 10px 60px;
+    border-radius: 15px;
+}
+#kapcsolatok .tartalom div div .uzen a:hover{
+    color: rgb(211, 211, 211);
+    transition: 0.5s ease-in-out;
+    box-shadow: 5px 5px 10px black;
+}
+#kapcsolatok .tartalom div div .uzen h1 pre h2{
+    font-size: 24px;
+    display: flex;
+}
